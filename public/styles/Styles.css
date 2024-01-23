@@ -1,0 +1,165 @@
+ body{
+     overflow: hidden;
+} 
+.button-div{
+    display: flex;
+    height: 750px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    
+}
+.title-div{
+     display: flex;
+    flex-direction: column; 
+    
+    width: 1000px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(11, 182, 11);
+    
+}
+.pizza-image
+{
+    height: 100px;
+    width: 100px;
+    
+} 
+@keyframes customAnimation {
+    0% {
+      transform: translate(250%, 00%) rotate(180deg) scale(1);
+    }
+    /* 25% {
+        transform: translate(-350%, 350%) rotate(135deg) scale(1.5);
+      }
+    50% {
+      transform: translate(-350%, 350%) rotate(90deg) scale(1.75);
+    }
+    75% {
+        transform: translate(-350%, 350%) rotate(45deg) scale(2);
+      } */
+    100% {
+      transform: translate(-380%, 215%) rotate(0deg) scale(4.8);
+    }
+  }
+
+  .animated-object {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    
+    border-radius: 50%;
+    animation: customAnimation 1s forwards;
+  }
+  /* .pizza-image:hover{
+    height: 125px;
+    width: 125px;
+    transform: rotate(0deg);
+      
+} 
+
+ .pizza-image:active {
+    transform: scale(1.5);
+    
+      
+}  */
+.buttonf{
+    margin-top: 150px;
+    display: flex;
+    
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.centered-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.head {
+   font-weight: bold;
+   font-family: 'Dosis', sans-serif;
+   font-size: 6rem;
+}
+
+.lst {
+    margin: 15px;
+    font-weight: bold;
+    font-family: 'Dosis', sans-serif;
+    font-size: 2.4rem;
+    align-items: start;
+    /* Additional styles for .lst if needed */
+}
+.div-img
+{
+    display: flex;
+    width:100%;
+    height: 500px;
+    align-items: right;
+    justify-content: right;
+    background-color: rgb(11, 182, 11);
+}
+.pizza-board
+{
+    height:700px ;
+    width: 700px;
+    position: absolute;
+            right:75px; 
+}
+.lower-div
+{
+    background-color: #201F1F;
+    width: 100%;
+    height: 411px;
+    display: flex;
+    justify-content: center;
+}
+
+.mini-pizza-image
+{
+    height: 100px;
+    width: 100px;
+    transform: rotate(180deg);
+    transition:1s ease;
+} 
+.mini-pizza-image:hover{
+    height: 125px;
+    width: 125px;
+    transform: rotate(0deg);
+      
+} 
+
+ .mini-pizza-image:active {
+    transform: scale(1.5);
+    
+      
+}
+.parent{
+    display: flex;
+}
+.lower-div1
+{
+    width: 50%;
+}
+.order{
+margin-top: 50px;
+width: 414px;
+ display: flex;
+ justify-content:center;
+ justify-content:space-around;
+}
+.buttons
+{
+    display: flex;
+    gap: 33px;
+}
+.BG
+{
+    width:100%;
+    height: 500px; 
+}

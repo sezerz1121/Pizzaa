@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/styles/Styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+ 
+  
+  <div class="parent">
+    
+    <div class="title-div" style="background-color: <%= backgroundColor %>;">
+         
+      <% if (locals.pizza) { %>
+          <div class="head centered-content">
+              <h1 class="head" ><%= pizza.name %></h1>
+          </div>
+  
+          <div class="lst centered-content">
+              <ul>
+                  <% for (var i = 0; i < 3; i++) { %>
+                      <li class="lst"><%= pizza.toppings[i] %></li>
+                  <% } %>
+              </ul>
+          </div>
+      <% } else { %>
+          <h1 class="head">Select Your Favorite Pizza</h1>
+      <% } %>
+  </div>
+
+    <div class="div-img" style="background-color: <%= backgroundColor %>;"> 
+      
+      
+      <img class="pizza-board"src="styles/pizzabord.png" /> 
+        <div class="animated-object">
+            <img src=<%=currentimage %> class="pizza-image"/> 
+        </div>
+        
+      </div>
+  </div>
+ 
+    
+      <div class="lower-div">
+        <div class="lower-div1">
+          <form action="/Pizza" method="POST" class="buttons">
+            <button class="btn bg-transparent tbutton" type="submit" value="Margherita" name="choice">
+              <img src="styles/pizza1.png" class="mini-pizza-image"/>
+          </button> 
+           
+            <button class="btn bg-transparent tbutton"  type="submit" value="Pepperoni" name="choice">
+              <img src="styles/pizza3.png" class="mini-pizza-image"/>
+            </button>
+            <button class="btn bg-transparent tbutton"  type="submit" value="Veggie-Delight" name="choice">
+              <img src="styles/pizza2.png" class="mini-pizza-image"/>
+            </button> 
+          </form>
+          
+        <div class="order">
+          <div class="order">
+          
+          </div>
+          <div class="order">
+            <button type="button" class="btn btn-success ord" value="Order" name="choice">order now</button>
+          </div>
+          
+          <div class="order">
+          
+          </div>
+        </div>
+        
+        </div>
+        <div class="lower-div2"><h1>hello</h1></div>
+        
+      </div>
+
+    
+   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+</body>
+</html>
