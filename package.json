@@ -16,7 +16,7 @@
   },
   "author": "Tatsam",
   "license": "ISC"
-}
+},
 "scripts": {
   "start": "nodemon index.js"
 }
